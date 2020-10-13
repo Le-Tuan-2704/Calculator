@@ -11,32 +11,48 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textMain"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/textPlay"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:background="#D6E6E8"
+                android:hint="Casio"
+                android:gravity="center"
+                android:textColor="#020202"
+                android:textSize="60dp" />
+
+            <TextView
+                android:id="@+id/textOperator"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="#D6E6E8"
+                android:gravity="center"
+                android:textColor="#020202"
+                android:textSize="60dp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/textEdit"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
             android:background="#D6E6E8"
-            android:text="0"
+            android:hint="0"
             android:gravity="right|bottom"
             android:textColor="#020202"
-            android:textSize="70dp" />
+            android:layout_marginBottom="5dp"
+            android:textSize="60dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="#D5CFD0DA"
+            android:background="#ffffff"
             android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/nPhanTram"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="%"
-
-                android:textSize="20dp"
-                android:layout_weight="1"
-                android:textStyle="bold"></Button>
 
             <Button
                 android:id="@+id/nCE"
@@ -57,19 +73,31 @@
                 android:textStyle="bold"></Button>
 
             <Button
-                android:id="@+id/nDell"
+                android:id="@+id/nBS"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="Dell"
+                android:text="BS"
                 android:textSize="20dp"
                 android:layout_weight="1"
                 android:textStyle="bold"></Button>
+
+            <Button
+                android:id="@+id/nChia"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="/"
+
+                android:textSize="20dp"
+                android:layout_weight="1"
+                android:textStyle="bold"></Button>
+
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#ffffff"
             android:orientation="horizontal">
 
             <Button
@@ -105,7 +133,6 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="*"
-                android:background="#D5CFD0DA"
                 android:textSize="20dp"
                 android:textStyle="bold"></Button>
         </LinearLayout>
@@ -114,6 +141,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#ffffff"
             android:orientation="horizontal">
 
 
@@ -145,12 +173,11 @@
                 android:textStyle="bold"></Button>
 
             <Button
-                android:id="@+id/nChia"
+                android:id="@+id/nTru"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="/"
+                android:text="-"
                 android:textSize="20dp"
-                android:background="#D5CFD0DA"
                 android:layout_weight="1"
                 android:textStyle="bold"></Button>
         </LinearLayout>
@@ -159,6 +186,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#ffffff"
             android:orientation="horizontal">
 
             <Button
@@ -193,7 +221,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="+"
-                android:background="#D5CFD0DA"
                 android:textSize="20dp"
                 android:layout_weight="1"
                 android:textStyle="bold"></Button>
@@ -203,14 +230,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#ffffff"
+            android:paddingBottom="5dp"
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/nBăng"
+                android:id="@+id/nCongTru"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="="
-                android:background="#67C7D3"
+                android:text="+/-"
                 android:textSize="20dp"
                 android:layout_weight="1"
                 android:textStyle="bold"></Button>
@@ -234,11 +262,10 @@
                 android:textStyle="bold"></Button>
 
             <Button
-                android:id="@+id/nTru"
-                android:background="#D5CFD0DA"
+                android:id="@+id/nBang"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="-"
+                android:text="="
                 android:textSize="20dp"
                 android:layout_weight="1"
                 android:textStyle="bold"></Button>
